@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Athletics</title>
+    <title>Orioles Athletics</title>
+   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -19,10 +20,13 @@
     <script src="js/jquery.backstretch.min.js"></script>
 
   
-    <!-- Stylesheet -->
-    
+    <!-- Stylesheet --
+
     <!-- Home Page -->
     <link rel="stylesheet" href="home.css">
+    
+
+    
 </head>
 <body>
 <!-- Navigation -->
@@ -30,18 +34,60 @@
     <div class="container">
         <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-        <a class="navbar-brand" href="#intro">Athletics</a> </div>
+      	 <a class="navbar-brand" href="#intro">Orioles Athletics</a> </div>
     
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <div id="sports" class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
                 <li class="hidden"> <a href="#page-top"></a> </li>
-                <li> <a href="#about">About</a> </li>
-                <li> <a href="#athletics">Athletics</a> </li>
-                <li> <a href="#clubs">Mens</a> </li>
-                <li> <a href="#counselors">Womens</a> </li>
-                <li> <a href="#staff">Staff</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
-            </ul>
+              
+                <div class="dropdown">
+ 					 <button class="dropbtn"><a>Sports</a></button>
+                      <div class="dropdown-content">
+                        
+                         <li class="dropdown2">
+                             <a href="#football">Fall </a>
+                                <ul>
+                                   <li>
+                                   <a href="#football">Football</a>
+                                    <a href="#soccer">Men's Soccer</a>
+                                    <a href="#crosscountry">Cross Country</a>
+                                    <a href="#vb">Volleyball</a>
+                                     <a href="#wtennis">Girl's Tennis</a>
+                                     <a href="#girlsg">Girl's Golf</a>
+                                    </li>
+                                </ul>
+                         </li>
+                         
+                         <li class="dropdown3">
+                             <a href="#wrestling">Winter </a>
+                                <ul>
+                                   <li>
+                                   <a href="#wrestling">Wrestling</a>
+                                    <a href="#mbb">Men's Basketball</a>
+                                    <a href="#wbb">Women's Basketball</a>
+                                    <a href="#bowling">Bowling</a>
+                                    </li>
+                                </ul>
+                         </li>
+                          <li class="dropdown4">
+                             <a href="#baseball">Spring</a>
+                                <ul>
+                                   <li>
+                                   <a href="#baseball">Baseball</a>
+                                    <a href="#softball">Softball</a>
+                                    <a href="#athletics">Track & Field</a>
+                                    <a href="#wsoccer">Women's Soccer</a>
+                                    <a href="#mensgolf">Men's Golf</a>
+                                    </li>
+                                </ul>
+                         </li>
+                        
+                      </div>
+                  </div>
+                <li> <a href="#athletics">About</a> </li>
+                <li> <a href="#football">Coaches</a> </li>
+                <li> <a href="#baseball">Schedules</a> </li>
+          </ul>
         </div>
     </div>
 </nav>
@@ -51,18 +97,18 @@
     <script>
     //Slideshow
         $("#intro").backstretch([
-		"orioles.jpg-large",
-            "assets/home/parallax2.jpg",
-            "assets/home/parallax3.jpg",
-            "assets/home/parallax4.jpg"
+            "stadium.png",
+            "building.png",
+            "assets/athletics/studentsection1.jpg",
+			"orioles.jpg-large"
         ], {duration: 5000, fade: 2000});
     </script>
     <div class="intro-body">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h1><span class="styled-heading">Augusta High School Athletics</span></h1>
-                    <p style="color:orange; font-size:20px">Welcome to AHS</p>
+                    <h1><span class="styled-heading">Augusta Orioles Athletics</span></h1>
+                    <p style="color:orange; font-size:20px">Fly High</p>
                     <br>
                 <a href="#about" class="btn btn-default page-scroll">Learn More</a> </div>
             </div>
@@ -81,12 +127,12 @@
             <div class="col-md-4">
                     <div class="about-text">
                     <h4>What We Do</h4>
-                    <p>We do school things</p>
+                    <p>Augusta High School offers a variety of sports, including Men's and Womens, offered Fall through Spring.</p>
                     <ul>
-                        <li>Li this is</li>
-                        <li>Another li</li>
-                        <li>And another li!</li>
-                        <li>And another li!!</li>
+                        <li>Fall</li>
+                        <li>Winter</li>
+                        <li>Spring</li>
+                        <li>Summer</li>
                     </ul>
                 </div>
             </div>
@@ -95,12 +141,39 @@
 </div>
   
 <!-- Not official Athletics page! Just a preview for scrolling down and cards! -->
-<div id="athletics" style="height:100%;">
-    <div class="athletics-body">
+
+<div id="football" style="height:100%;">
+    <div class="football-body">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h1><span class="styled-heading">Track & Field</span></h1>
+                    <h1><span class="styled-heading">Football</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Orioles</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="soccer" style="height:100%;">
+    <div class="soccer-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Men's Soccer</span></h1>
                     
                     <div class="card" ontouchstart="this.classList.toggle('hover')">
                         <div class="flipper">
@@ -121,7 +194,363 @@
         </div>
     </div>
 </div>
-
+<div id="crosscountry" style="height:100%;">
+    <div class="crosscountry-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Cross Country</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="vb" style="height:100%;">
+    <div class="vb-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Volleyball</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="wtennis" style="height:100%;">
+    <div class="wtennis-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Girl's Tennis</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="girlsg" style="height:100%;">
+    <div class="girlsg-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Girl's Golf</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="wrestling" style="height:100%;">
+    <div class="wrestling-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Wrestling</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mbb" style="height:100%;">
+    <div class="mbb-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Men's Basketball</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="wbb" style="height:100%;">
+    <div class="wbb-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Women's Basketball</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bowling" style="height:100%;">
+    <div class="bowling-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Bowling</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="baseball" style="height:100%;">
+    <div class="baseball-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Baseball</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="softball" style="height:100%;">
+    <div class="softball-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Softball</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="athletics" style="height:100%;">
+    <div class="athletics-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Track & Field</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="wsoccer" style="height:100%;">
+    <div class="wsoccer-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Women's Soccer</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mensgolf" style="height:100%;">
+    <div class="mensgolf-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Men's Golf</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="fcoach" style="height:100%;">
+    <div class="fcoach-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Fall Coaches</span></h1>
+                    
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center">
+                                <img src="orioles.jpg-large" alt="Avatar" style="width:100%; height:78%;">
+                                <h4><b>Front Title</b></h4>
+                                <p>Front Info</p>
+                            </div>
+                            <div class="back text-center">
+                                <h4><b>Back Title</b></h4>
+                                <p>Back Info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 

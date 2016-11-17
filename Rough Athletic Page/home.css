@@ -73,6 +73,7 @@ body, html {
     }
 /* CARD END */
 
+
 h1 {
 	font-weight: 700;
 }
@@ -122,10 +123,17 @@ ul, ol {
 }
 
 /* Navigation */
+.show {display:block;}
 .navbar-custom {
 	padding: 0;
 	border-bottom: 0;
 	letter-spacing: 1px;
+	background: #222;
+	text-transform: uppercase;
+}
+.navbar-custom button a {
+	letter-spacing: 1px;
+	font-size: 14.4px;
 	background: #222;
 	text-transform: uppercase;
 }
@@ -267,6 +275,83 @@ ul, ol {
 #about p {
 	margin-top: 20px;
 }
+/* dropdown2 Button for Athletics Page*/
+.dropbtn {
+    background-color: #222;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown2 content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* dropdown2 Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown2 */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown2 links on hover */
+.dropdown-content a:hover {background-color: #222}
+
+/* Show the dropdown2 menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown2 button when the dropdown2 content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #222;
+}
+
+
+/*dropdown2submenu*/
+ li.dropdown2 ul {
+display:none;
+position: absolute; right: 100%; top:0;
+background-color:#222
+}
+
+li.dropdown2:hover ul{
+display: block;}
+
+
+/*dropdown3submenu*/
+ li.dropdown3 ul {
+display:none;
+position: absolute; right: 100%; top:0;
+background-color:#222
+}
+
+li.dropdown3:hover ul{
+display: block;}
+
+/*dropdown4submenu*/
+ li.dropdown4 ul {
+display:none;
+position: absolute; right: 100%; top:0;
+background-color:#222
+}
+
+li.dropdown4:hover ul{
+display: block;}
 
 /* Athletics */
 #athletics {
@@ -298,5 +383,470 @@ ul, ol {
 	text-shadow: 0 4px #111;
 }
 #athletics .athletics-body .athletics-text {
+	font-size: 18px;
+}
+#football {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/football2.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#football .football-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#football .football-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#football .football-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#football .football-body .football-text {
+	font-size: 18px;
+}
+#crosscountry {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("building.png") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#crosscountry .crosscountry-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#crosscountry .crosscountry-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#crosscountry .crosscountry-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#crosscountry .crosscountry-body .crosscountry-text {
+	font-size: 18px;
+}
+#wtennis {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("building.png") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#wtennis .wtennis-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#wtennis .wtennis-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#wtennis .wtennis-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#wtennis .wtennis-body .wtennis-text {
+	font-size: 18px;
+}
+#girlsg {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("building.png") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#girlsg .girlsg-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#girlsg .girlsg-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#girlsg .girlsg-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#girlsg .girlsg-body .girlsg-text {
+	font-size: 18px;
+}
+#vb {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("building.png") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#vb .vb-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#vb .vb-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#vb .vb-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#vb .vb-body .vb-text {
+	font-size: 18px;
+}
+#soccer {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("stadium.png") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#soccer .soccer-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#soccer .soccer-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#soccer .soccer-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#soccer .soccer-body .soccer-text {
+	font-size: 18px;
+}
+#wrestling {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/wrestling.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#wrestling .wrestling-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#wrestling .wrestling-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#wrestling .wrestling-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#wrestling .wrestling-body .wrestling-text {
+	font-size: 18px;
+}
+#mbb {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/wrestling.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#mbb .mbb-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#mbb .mbb-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#mbb .mbb-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#mbb .mbb-body .mbb-text {
+	font-size: 18px;
+}
+#wbb {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/wrestling.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#wbb .wbb-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#wbb .wbb-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#wbb .wbb-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#wbb .wbb-body .wbb-text {
+	font-size: 18px;
+}
+#bowling {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/wrestling.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#bowling .bowling-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#bowling .bowling-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#bowling .bowling-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#bowling .bowling-body .bowling-text {
+	font-size: 18px;
+}
+#baseball {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/wrestling.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#baseball .baseball-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#baseball .baseball-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#baseball .baseball-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#baseball .baseball-body .baseball-text {
+	font-size: 18px;
+}
+#softball {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/wrestling.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#softball .softball-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#softball .softball-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#softball .softball-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#softball .softball-body .softball-text {
+	font-size: 18px;
+}
+#wsoccer {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/wrestling.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#wsoccer .wsoccer-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#wsoccer .wsoccer-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#wsoccer .wsoccer-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#wsoccer .wsoccer-body .wsoccer-text {
+	font-size: 18px;
+}
+#mensgolf {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/wrestling.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#mensgolf .mensgolf-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#mensgolf .mensgolf-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#mensgolf .mensgolf-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#mensgolf .mensgolf-body .mensgolf-text {
+	font-size: 18px;
+}
+#fcoach {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	background: url("assets/athletics/wrestling.jpg") no-repeat center center fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#fcoach .fcoach-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+#fcoach .fcoach-body H1 {
+	font-size: 76px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+}
+#fcoach .fcoach-body .styled-heading {
+    color: #F0F8FF;
+	text-shadow: 0 4px #111;
+}
+#fcoach .fcoach-body .fcoach-text {
 	font-size: 18px;
 }
