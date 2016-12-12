@@ -1,0 +1,199 @@
+/* Navigation */
+.navbar-custom {
+    padding: 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: rgba(0,0,0,0.9);
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+.navbar-custom-faded {
+    padding: 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0));
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+.navbar-custom .navbar-brand {
+    color: #eee;
+    font-weight: 600;
+    transition: 0.6s;
+}
+.navbar-custom-faded .navbar-brand {
+  color: #fff;
+    font-weight: 600;
+    transition: 0.6s;
+}
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+/* Navbar Toggle Button */
+.navbar-custom .navbar-toggle {
+    color: #eee;
+    font-size: 18px;
+    border-radius: 2px;
+    padding: 0 4px;
+}
+.navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
+    background-color: rgba(80,80,80,.4);
+    color: #fff;
+}
+.navbar-custom-faded .navbar-toggle:hover, .navbar-custom-faded .navbar-toggle:focus {
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+}
+/* Toggle Button End */
+
+.navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+.navbar-custom a {
+    color: #fff;
+}
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    transition: color .6s;
+}
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #f05b22;
+    background-color: transparent;
+    transition: color .6s;
+}
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+    color: #fff;
+    transition: color .6s;
+}
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+.navbar-custom-faded .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    color: #fff;
+    transition: color .6s;
+}
+.navbar-custom-faded .nav li a:hover {
+    outline: 0;
+    color: #f05b22;
+    background-color: transparent;
+    transition: color .6s;
+}
+.navbar-custom-faded .nav li a:focus, .navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+    color: white;
+    transition: color .6s;
+}
+.navbar-custom .nav li.active a {
+    background-color: #121212;
+    color: #f05b22;
+    border-bottom: solid 5px rgba(199,66,0,0.9);
+}
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+/* dropdown2 Button for Athletics Page*/
+
+/* The container <div> - needed to position the dropdown2 content */
+.dropdown {
+	float: left;
+	padding: 14.5px 4px;
+}
+
+/* dropdown2 Content (Hidden by Default) */
+.dropdown-content {
+    position: absolute;
+    background-color: #121212;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown2 */
+.dropdown-content a {
+    color: #121212;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown2 links on hover */
+.dropdown-content a:hover {background-color: #121212}
+
+/* Show the dropdown2 menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown2 button when the dropdown2 content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #121212;
+}
+
+
+/*dropdown2submenu*/
+ li.dropdown2 ul {
+	 transition: 0.4s;
+background-color:#121212;
+}
+
+li.dropdown2:hover ul{
+	transition: 0.4s;
+display: block;
+}
+/* dropdown2 Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #121212;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+/* Links inside the dropdown2 */
+.dropdown-content a {
+    color: #f05b22;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown2 links on hover */
+.dropdown-content a:hover {background-color: #121212}
+
+/* Show the dropdown2 menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown2 button when the dropdown2 content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #121212;
+}
+
+
+/*dropdown2submenu*/
+ li.dropdown2 ul {
+display:none;
+position: absolute; right: 100%; top:0;
+background-color:#121212;
+}
+
+li.dropdown2:hover ul{
+display: block;}
+
