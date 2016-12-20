@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Orioles Athletics</title>
+    <link rel="icon" type="image/png" href="assets/home/oriole.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+<!-- Rickey's Information
+
+  If you wish to use smooth scrolling to a page link put 'sc' in the link's class
+    EX: <li> <a class="sc" href="#whichIDtoGOto">Example</a> </li>
+
+-->
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Other JavaScript plugins -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery.backstretch.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="1067726743553-h8b990ac52veqoddhaesub255to3u3q5.apps.googleusercontent.com">
+
+  
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Home Page -->
+    <link rel="stylesheet" href="home.css">
+    
+  <script>
+    function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail());
+    }
+  </script>
+</head>
+<body data-spy="scroll" data-target="#navbar">
+<!-- Navigation -->
+<nav id ="navbar" class="navbar navbar-custom-faded navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+        <a class="navbar-brand sc" href="#intro">Orioles Athletics <img src="assets/home/oriole.png" alt="" style="float:left; height:110%; padding-right: 5px;"></a>
+    </div>
+    
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="hidden"> <a href="#page-top"></a> </li>
+                <li> <a class="sc" href="#about">About</a> </li>
+                <li> <a class="sc" href="#ph">Coaches</a> </li>
+                <li> <a class="sc" href="#clubs">Schedules</a> </li>
+            <div class="dropdown">
+             <li><a class="sc">Sports</a></li>
+                      <div class="dropdown-content">
+                        
+                         <li class="dropdown2">
+                             <a class="sc sp" href="#fall">Fall </a>
+                                
+                               
+                                <ul>
+                                   <a class="sc" href="#football">Football</a>
+                                    <a class="sc" href="#menssoccer">Men's Soccer</a>
+                                    <a class="sc" href="#crosscountry">Cross Country</a>
+                                    <a class="sc" href="#volleyball">Volleyball</a>
+                                     <a class="sc" href="#girlstennis">Girl's Tennis</a>
+                                     <a class="sc" href="#girlsgolf">Girl's Golf</a>
+                                </ul>
+                         </li>
+                         
+                         <li class="dropdown2">
+                             <a class="sc" href="#winter">Winter </a>
+                                <ul>
+                                   <li>
+                                   <a class="sc" href="#mensbasketball">Mens Basketball</a>
+                                    <a class="sc" href="#womensbasketball">Womens Basketball</a>
+                                    <a class="sc" href="#wrestling">Wrestling</a>
+                                    <a class="sc" href="#bowling">Bowling</a>
+                                    </li>
+                                </ul>
+                         </li> 
+                         
+                             <li class="dropdown2">
+                             <a class="sc" href="#spring">Spring </a>
+                                <ul>
+                                   <li>
+                                   <a class="sc" href="#baseball">Baseball</a>
+                                    <a class="sc" href="#softball">Softball</a>
+                                    <a class="sc" href="#track">Track & Field</a>
+                                    <a class="sc" href="#womenssoccer">Womens Soccer</a>
+                                     <a class="sc" href="#mensgolf">Mens Golf</a>
+                                    </li>
+                                </ul>
+                         </li>
+                          
+              		 </div>
+             </div>
+               </ul>
+               </div>
+               </div>
+			   </nav>
+
+<!-- Home -->
+<div id="intro" style="height:100%;">
+    <script>
+    //Slideshow
+        $.backstretch([
+            "assets/home/stadium.jpg",
+            "assets/home/pressbox.jpg",
+            "assets/home/bell.jpg",
+            "assets/home/gymdoors.jpg"
+        ], {duration: 5000, fade: 1000});
+    </script>
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                 <h1><span class="styled-heading">Augusta Orioles Athletics</span></h1>
+                    <br>
+                <a href="#about" class="btn btn-default page-scroll sc">Learn More</a> </div>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section (Home) -->
+<div id="about">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>Events</h2>
+        <hr>
+      </div>
+        <div class="row">
+            <div class="col-md-4" style="width:50%; float:left;">
+                    <div class="about-text">
+                    <h4>Upcoming Events</h4>
+                    <ul>
+                        <li id="1UE">Error: Contact an admin</li>
+                        <li id="2UE">Error: Contact an admin</li>
+                        <li id="3UE">Error: Contact an admin</li>
+                        <li id="4UE">Error: Contact an admin</li>
+                        <li id="5UE">Error: Contact an admin</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4" style="width:50%; float:right;">
+                    <div class="about-text">
+                    <h4>Today's Events</h4>
+                    <ul>
+                        <li id="1TE">Error: Contact an admin</li>
+                        <li id="2TE">Error: Contact an admin</li>
+                        <li id="3TE">Error: Contact an admin</li>
+                        <li id="4TE">Error: Contact an admin</li>
+                        <li id="5TE">Error: Contact an admin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<!-- Not official Athletics page(yes it is)! Just a preview for scrolling down and cards! -->
+<div id="fall" class="sp">
+
+<div id="football" style="height:100%;">
+    <div class="football-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Football</span></h1>
+                    
+                    <p id="link">
+                    Welcome to Oriole Athletics, please click the link below to visit our webpage!
+                    </p>
+                    <p id="button">
+                    <div id="blink"> <a href="../../../../Desktop/Rough Athletic Page/athleticindex.html" class="btn btn-default page-scroll">Learn More</a> </div>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+
+<div id="menssoccer" style="height:100%;">
+    <div class="menssoccer-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Men's Soccer</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="crosscountry" style="height:100%;">
+    <div class="crosscountry-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Cross Country</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="volleyball" style="height:100%;">
+    <div class="volleyball-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Volleyball</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="girlstennis" style="height:100%;">
+    <div class="girlstennis-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Girls Tennis</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="girlsgolf" style="height:100%;">
+    <div class="girlsgolf-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Girls Golf</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="winter">
+
+<div id="mensbasketball" style="height:100%;">
+    <div class="mensbasketball-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Mens Basketball</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="womensbasketball" style="height:100%;">
+    <div class="womensbasketball-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Womens Basketball</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="wrestling" style="height:100%;">
+    <div class="wrestling-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Wrestling</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="bowling" style="height:100%;">
+    <div class="bowling-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Bowling</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="spring">
+<div id="baseball" style="height:100%;">
+    <div class="baseball-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Baseball</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="softball" style="height:100%;">
+    <div class="softball-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Softball</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+
+<div id="track" style="height:100%;">
+    <div class="track-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Track & Field</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="womenssoccer" style="height:100%;">
+    <div class="womenssoccer-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Womens Soccer</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="break">
+<br>
+</div>
+
+<div id="mensgolf" style="height:100%;">
+    <div class="mensgolf-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">Mens Golf</span></h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+<p id="copyright">
+Copyright 2016 &copy; Augusta High School. All Rights Reserved. 2020 Ohio, Augusta, Kansas 67010.
+</p>
+</div>
+
+
+
+</body>
+</html>
+
