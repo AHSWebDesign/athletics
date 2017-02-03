@@ -1,0 +1,1165 @@
+
+<!-- Rickey's Information
+
+  If you wish to use smooth scrolling to a page link put 'sc' in the link's class
+    EX: <li> <a class="sc" href="#whichIDtoGOto">Example</a> </li>
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AHS Orioles</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Other JavaScript plugins -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery.backstretch.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="1067726743553-h8b990ac52veqoddhaesub255to3u3q5.apps.googleusercontent.com">
+
+  
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Home Page -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/home/staff.css">
+    
+  <script>
+    function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail());
+    }
+  </script>
+  <script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.spring'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		filterList.init();
+		
+		
+	});	
+	</script>
+</head>
+<body data-spy="scroll" data-target="#navbar">
+<!-- Navigation -->
+<nav id ="navbar" class="navbar navbar-custom-faded navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+        <a class="navbar-brand sc" href="#intro">Home <img src="assets/home/oriole.png" alt="" style="float:left; height:110%; padding-right: 5px;"></a>
+    </div>
+    
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="hidden"> <a href="#page-top"></a> </li>
+                <li> <a class="sc" href="#athletics">Athletics</a> </li>
+                <li> <a class="sc" href="#activities">Activities</a> </li>
+                <li> <a class="sc" href="#counselors">Counselors</a> </li>
+                <li> <a class="sc" href="#staff">Staff</a> </li>
+                <li> <a class="sc" href="#info">General Info</a> </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home -->
+<div id="intro" style="height:100%;">
+    <script>
+    //Slideshow
+        $("#intro").backstretch([
+            "assets/home/stadium.jpg",
+            "assets/home/pressbox.jpg",
+            "assets/home/bell.jpg",
+            "assets/home/gymdoors.jpg"
+        ], {duration: 5000, fade: 1000});
+    </script>
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                 <h1><span class="styled-heading">Augusta High School</span></h1>
+                    <br>
+                <a href="#events" class="btn btn-default page-scroll sc">Learn More</a> </div>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Divider Section (Intro) -->
+<div id="events" class="pDivider">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>Events</h2>
+        <hr>
+      </div>
+        <div class="row">
+            <div class="col-md-4" style="width:50%; float:left;">
+                    <div class="text">
+                    <h4>Upcoming Events</h4>
+                    <ul>
+                        <li id="1UE">Error: Contact an admin</li>
+                        <li id="2UE">Error: Contact an admin</li>
+                        <li id="3UE">Error: Contact an admin</li>
+                        <li id="4UE">Error: Contact an admin</li>
+                        <li id="5UE">Error: Contact an admin</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4" style="width:50%; float:right;">
+                    <div class="text">
+                    <h4>Today's Events</h4>
+                    <ul>
+                        <li id="1TE">Error: Contact an admin</li>
+                        <li id="2TE">Error: Contact an admin</li>
+                        <li id="3TE">Error: Contact an admin</li>
+                        <li id="4TE">Error: Contact an admin</li>
+                        <li id="5TE">Error: Contact an admin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<!-- Athletics -->
+<div id="athletics" style="height:100%;background-color:rgba(0,0,0,0.7);">
+    <div class="container">
+    	<div class="heading">
+    		<h1><span class="styled-heading">Athletics</span></h1>
+        </div>
+        <div class="filterlist">
+            <ul id="filters" class="clearfix">
+                <li><span class="filter active" data-filter=".spring, .summer, .fall, .winter">All</span></li>
+                <li><span class="filter" data-filter=".spring">Spring</span></li>
+                <li><span class="filter" data-filter=".summer">Summer</span></li>
+                <li><span class="filter" data-filter=".fall">Fall</span></li>
+                <li><span class="filter" data-filter=".winter">Winter</span></li>
+            </ul>
+        </div>
+         
+         <div id="portfoliolist">
+         
+              <div class="portfolio spring" data-cat="spring">
+                <div class="portfolio-wrapper">
+                  <img src="assets/home/stadium.jpg" alt="" /> 
+                  <div class="label">
+                    <div class="label-text">
+                      <a class="text-title">Spring Sport</a> 
+                      <span class="text-category">Small Description</span>
+                    </div>
+                    <div class="label-bg"> </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="portfolio spring" data-cat="spring">
+                <div class="portfolio-wrapper">
+                  <img src="assets/home/stadium.jpg" alt="" />
+                  <div class="label">
+                    <div class="label-text">
+                      <a class="text-title">Spring Sport</a> 
+                      <span class="text-category">Small Description</span>
+                    </div>
+                    <div class="label-bg"> </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="portfolio summer" data-cat="summer">
+                <div class="portfolio-wrapper">
+                  <img src="assets/home/stadium.jpg" alt="" />
+                  <div class="label">
+                    <div class="label-text">
+                      <a class="text-title">Summer Sport</a> 
+                      <span class="text-category">Small Description</span>
+                    </div>
+                    <div class="label-bg"> </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="portfolio summer" data-cat="summer">
+                <div class="portfolio-wrapper">
+                  <img src="assets/home/stadium.jpg" alt="" />
+                  <div class="label">
+                    <div class="label-text">
+                      <a class="text-title">Summer Sport</a> 
+                      <span class="text-category">Small Description</span>
+                    </div>
+                    <div class="label-bg"> </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="portfolio fall" data-cat="fall">
+                <div class="portfolio-wrapper">
+                  <img src="assets/home/stadium.jpg" alt="" />
+                  <div class="label">
+                    <div class="label-text">
+                      <a class="text-title">Fall Sport</a> 
+                      <span class="text-category">Small Description</span>
+                    </div>
+                    <div class="label-bg"> </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="portfolio fall" data-cat="fall">
+                <div class="portfolio-wrapper">
+                  <img src="assets/home/stadium.jpg" alt="" />
+                  <div class="label">
+                    <div class="label-text">
+                      <a class="text-title">Fall Sport</a> 
+                      <span class="text-category">Small Description</span>
+                    </div>
+                    <div class="label-bg"> </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="portfolio winter" data-cat="winter">
+                <div class="portfolio-wrapper">
+                  <img src="assets/home/stadium.jpg" alt="" />
+                  <div class="label">
+                    <div class="label-text">
+                      <a class="text-title">Winter Sport</a> 
+                      <span class="text-category">Small Description</span>
+                    </div>
+                    <div class="label-bg"> </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="portfolio winter" data-cat="winter">
+                <div class="portfolio-wrapper">
+                  <img src="assets/home/stadium.jpg" alt="" />
+                  <div class="label">
+                    <div class="label-text">
+                      <a class="text-title">Winter Sport</a> 
+                      <span class="text-category">Small Description</span>
+                    </div>
+                    <div class="label-bg"> </div>
+                  </div>
+                </div>
+              </div>
+         </div>
+    </div>
+</div>
+
+<!-- Divider Section (Intro) -->
+<div class="pDivider">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>Events</h2>
+        <hr>
+      </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</div>
+
+<!-- Clubs/Activities -->
+<div id="activities" style="height:100%; background-color:rgba(0,0,0,0.7);">
+    <div class="body tb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1><span class="styled-heading">COMING SOON</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Divider Section (Clubs) -->
+<div class="pDivider">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>Events</h2>
+        <hr>
+      </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</div>
+
+<!-- Counselors -->
+<div id="counselors" style="height:100%;">
+    <div class="counselors-body">
+        <div class="container">
+      <div class="row">
+      <div class="section-title text-center center">
+        <h2>Counselors</h2>
+       <br>
+          <h7>More</h7>
+        <hr>
+      </div>
+        <div class="row">
+            <div class="col-md-4"> </div>
+            <br>
+                    <div id="And" align="center">
+                    <div class="card" ontouchstart="this.classList.toggle('hover')">
+                        <div class="flipper">
+                            <div class="front text-center col-md-12">
+                                <img src="assets/staff/TRACYANDERSON.jpg" alt="Avatar" style="width:100%; height:75%;">
+                              <h4><strong>Tracy Anderson</strong></h4>
+                                <p>Counselor</p>
+                            </div>
+                            <div class="back text-center">
+                              <h4><strong>Information</strong></h4>
+                              <p>Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="Vid" align="center">
+                   <!-- <video  width="550" height="350" controls >
+  <source src="assets/counselors/Enrollment.mp4" type="video/mp4">
+  <source src="assets/counselors/movie.ogg" type="video/ogg">
+</video>-->
+</div>
+                    <div id="Hamm" align="center">
+                    <div class="card" ontouchstart="this.classList.toggle('hover')" >
+                                <div class="flipper">
+                                <div class="front text-center col-md-12">
+                                <img src="assets/staff/ELIZABETHHAMBLIN.jpg" alt="Avatar" style="width:100%; height:75%;">
+                              <h4><strong>Elizabeth Hamblin</strong></h4>
+                                <p>Counselor</p>
+                            </div>
+                            <div class="back text-center">
+                              <h4><strong>Information</strong></h4>
+                              <p>Info</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+</div>
+<br>
+      <a target="_blank" title="follow the counselors on twitter!" href="https://twitter.com/ahs_counselors"><img alt="follow the counselors on twitter!" src="assets/counselors/twitter_40x40.png" border="0"></a>
+</div>
+</div>
+</div>
+
+<!-- Divider Section (Counselors) -->
+<div class="pDivider">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>Events</h2>
+        <hr>
+      </div>
+        <div class="row">
+              
+        </div>
+    </div>
+</div>
+
+<!-- Staff -->
+<div id="staff">
+    <div class="container" style="height:100%;">
+        <div class="text-center">
+            <h1><span class="styled-heading">Staff</span></h1>
+        </div>
+        <div class="stafflist">
+            <div class="section-title text-center center">
+                <p>Select a department of education to narrow down the list</p>
+                <br>
+                <div class="categories">
+                  <ul class="cat">
+                    <li>
+                      <ol class="type">
+                        <li><a class="item active" data-filter="*">All</a></li>
+                        <li><a class="item" data-filter=".math">Mathematics</a></li>
+                        <li><a class="item" data-filter=".history">Social Studies</a></li>
+                        <li><a class="item" data-filter=".english">English</a></li>
+                        <li><a class="item" data-filter=".science">Science</a></li>
+                        <li><a class="item" data-filter=".staff">Staff and Support</a></li>
+                        <li><a class="item" data-filter=".art">Art</a></li>
+                        <li><a class="item" data-filter=".business">Business</a></li>
+                        <li><a class="item" data-filter=".music">Music</a></li>
+                        <li><a class="item" data-filter=".tech">Technology</a></li>
+                        <li><a class="item" data-filter=".se">Special Education</a></li>
+                        <li><a class="item" data-filter=".pe">Physical Education</a></li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          
+            <div class="row">
+              <div class="staff-items">
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 english">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Julie Barker</h4>
+                            <p>English</p>
+                          </div>
+                          <img src="assets/staff/JULIEBARKER.jpg" class="img-responsive" alt="Julie Barker">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 math">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Caitlin Bauer</h4>
+                            <p>Math</p>
+                          </div>
+                          <img src="assets/staff/CAITLINBAUER.jpg" class="img-responsive" alt="Caitlin Bauer">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 staff">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Brenda Bishop</h4>
+                            <p>Support Staff</p>
+                          </div>
+                          <img src="assets/staff/BRENDABISHOP.jpg" class="img-responsive" alt="Brenda Bishop">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 art">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Charles Bishop</h4>
+                            <p>Drawing</p>
+                          </div>
+                          <img src="assets/staff/CHARLESBISHOP.jpg" class="img-responsive" alt="Charles Bishop">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 math">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Allen Bodyk</h4>
+                            <p>Math</p>
+                          </div>
+                          <img src="assets/staff/ALLENBODYK.jpg" class="img-responsive" alt="Allen Bodyk">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 staff">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Tricia Brown</h4>
+                            <p>Support Staff</p>
+                          </div>
+                          <img src="assets/staff/TRICIABROWN.jpg" class="img-responsive" alt="Tricia Brown">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 science">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Joe Conner</h4>
+                            <p>Science </p>
+                          </div>
+                          <img src="assets/staff/JOECONNER.jpg" class="img-responsive" alt="Joe Conner">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 math">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Keith Conrady</h4>
+                            <p>Math</p>
+                          </div>
+                          <img src="assets/staff/KEITHCONRADY.jpg" class="img-responsive" alt="Keith Conrady">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 staff">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Eileen Dreiling</h4>
+                            <p>Library Media Specialist</p>
+                          </div>
+                          <img src="assets/staff/Dreiling.jpg" class="img-responsive" alt="Eileen Dreiling">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                  
+    <div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 spanish">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Frank Espinoza</h4>
+                            <p>Spanish</p>
+                          </div>
+                          <img src="assets/staff/FRANKESPINOZA.jpg" class="img-responsive" alt="Frank Espinoza">
+                        </a>
+                    </div>
+                  </div>
+             </div>
+     
+                </div>
+                   <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 science">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Brian Hallmark</h4>
+                            <p>Science</p>
+                          </div>
+                          <img src="assets/staff/BRIANHALLMARK.jpg" class="img-responsive" alt="Brian Hallmark">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                  
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 science">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>J.D. Hand</h4>
+                            <p>Science</p>
+                          </div>
+                          <img src="assets/staff/J.D.HAND.jpg" class="img-responsive" alt="J.D. Hand">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                  
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 english">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Mary Harrison</h4>
+                            <p>English</p>
+                          </div>
+                          <img src="assets/staff/MARYHARRISON.jpg" class="img-responsive" alt="Mary Harrison">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                  
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 english">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Meriel Hartling</h4>
+                            <p>English</p>
+                          </div>
+                          <img src="assets/staff/MERIELHARTLING.jpg" class="img-responsive" alt="Meriel Hartling">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                      
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 business">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Karen Hastings</h4>
+                            <p>Business</p>
+                          </div>
+                          <img src="assets/staff/KARENHASTING.jpg" class="img-responsive" alt="Karen Hasting">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 history">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Rick Hess</h4>
+                            <p>Social Studies</p>
+                          </div>
+                          <img src="assets/staff/RICKHESS.jpg" class="img-responsive" alt="Rick Hess">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 math">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Tyler Hinkle</h4>
+                            <p>Math</p>
+                          </div>
+                          <img src="assets/staff/TYLERHINKLE.jpg" class="img-responsive" alt="Tyler Hinkle">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 music">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Todd Hollis</h4>
+                            <p>Music</p>
+                          </div>
+                          <img src="assets/staff/TODDHOLLIS.jpg" class="img-responsive" alt="Todd Hollis">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+         
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 tech">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Chris Hussleman</h4>
+                            <p>Industrial Technology</p>
+                          </div>
+                          <img src="assets/staff/CHRISHUSSELMAN.jpg" class="img-responsive" alt="Chris Hussleman">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 history">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Doug Jefferson</h4>
+                            <p>Social Studies</p>
+                          </div>
+                          <img src="assets/staff/DOUGJEFFERSON.jpg" class="img-responsive" alt="Doug Jefferson">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 staff">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Lynda Kerstetter</h4>
+                            <p>Academic Support</p>
+                          </div>
+                          <img src="assets/staff/LYNDAKERSTETTER.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 staff">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Crystal Kletchka</h4>
+                            <p>Support Staff</p>
+                          </div>
+                          <img src="assets/staff/CRYSTALKLETCHKA.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 english">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Tim Laner</h4>
+                            <p>English</p>
+                          </div>
+                          <img src="assets/staff/TIMLANER.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 staff">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Doug Law</h4>
+                            <p>Administrative Staff</p>
+                          </div>
+                          <img src="assets/staff/DOUGLAW.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 science">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>TJ Meyer</h4>
+                            <p>Heatlh Science</p>
+                          </div>
+                          <img src="assets/staff/TJMEYER.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 staff">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Ryan L. Muhlig</h4>
+                            <p>Support Staff</p>
+                          </div>
+                          <img src="assets/staff/RYANMUHLIG.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 science">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Kathy Newcom</h4>
+                            <p>Family and Consumer Science</p>
+                          </div>
+                          <img src="assets/staff/KATHYNEWCOM.jpg" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 english">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Cindy Nickel</h4>
+                            <p>English</p>
+                          </div>
+                          <img src="assets/home/oriole.png" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 tech">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Steven Pazzie</h4>
+                            <p>Industrial Technology</p>
+                          </div>
+                          <img src="assets/staff/STEVEPAZZIE.jpg">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 pe">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Cynthia Phillips</h4>
+                            <p>Physical Education</p>
+                          </div>
+                          <img src="assets/staff/CYNTHIAPHILLIPS.jpg" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+     
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 history">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Jeff Regier</h4>
+                            <p>Social Studies</p>
+                          </div>
+                          <img src="assets/staff/JEFFREGIER.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+          
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 science">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Erika Richardson</h4>
+                            <p>Science</p>
+                          </div>
+                          <img src="assets/staff/ERIKARICHARDSON.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 business tech">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Kellee Roberts</h4>
+                            <p>Business and Technology</p>
+                          </div>
+                          <img src="assets/staff/KELLEEROBERTS.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 business tech">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Clint Robinson</h4>
+                            <p>Business and Technology</p>
+                          </div>
+                          <img src="assets/staff/CLINTROBINSON.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 math">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Jayson Schwinn</h4>
+                            <p>Math</p>
+                          </div>
+                          <img src="assets/staff/JAYSONSCHWINN.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 art">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Audra Shelite</h4>
+                            <p>Painting</p>
+                          </div>
+                          <img src="assets/staff/AUDRASHELITE.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 music">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Rachel Simmons</h4>
+                            <p>Music</p>
+                          </div>
+                          <img src="assets/staff/RACHELSIMMONS.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 history">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Jake Sims</h4>
+                            <p>Social Studies</p>
+                          </div>
+                          <img src="assets/staff/JAKESIMS.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 se">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Carrie Spear</h4>
+                            <p>Special Education</p>
+                          </div>
+                          <img src="assets/staff/CARRIESPEAR.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 science">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Nathan Stevens</h4>
+                            <p>Science</p>
+                          </div>
+                          <img src="assets/staff/NATHANSTEVENS.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 Science">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>JoAnna Strecker</h4>
+                            <p>Science</p>
+                          </div>
+                          <img src="assets/staff/JOANNASTRECKER.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 staff">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Danny Strobbe</h4>
+                            <p>Support Staff</p>
+                          </div>
+                          <img src="assets/staff/DANNYSTROBBE.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 english">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Rebecca Timberlake</h4>
+                            <p>English</p>
+                          </div>
+                          <img src="assets/staff/REBECCATIMBERLAKE.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 spanish">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Mandy Walker</h4>
+                            <p>Spanish</p>
+                          </div>
+                          <img src="assets/staff/MANDYWALKER.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 se">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Deana Walls</h4>
+                            <p>Special Education</p>
+                          </div>
+                          <img src="assets/staff/DEANAWALLS.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 science">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Jennifer Webster</h4>
+                            <p>Family and Consumer Science</p>
+                          </div>
+                          <img src="assets/staff/JENNIFERWEBSTER.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                       
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 staff">
+                  <div class="staff-item">
+                    <div class="hover-bg">
+                        <a href="#staff">
+                          <div class="hover-text">
+                            <h4>Donna Zerr</h4>
+                            <p>Administrative Staff</p>
+                          </div>
+                          <img src="assets/staff/DONNAZERR.jpg" class="img-responsive" alt="Title">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- General Info Portion of the home page, a.k.a. the bottom of the page -->
+<div id="info">
+    <h3 class="text-center">General Info</h3>
+	<div class="info-content">
+    <div class="container">
+    		<div class="info-column">
+            	<div class="info-activities info-column-section-title">
+                 <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapse1">Activities</button>
+                </div>
+                <div id="collapse1" class="collapse">
+                 <ul class="info-column-section-list">
+                 	<li class="info-column-section-item">
+                    	<a class="info-column-section-link" href="">N/A</a>
+                        </li>
+                      </ul>
+                      </div>
+                      </div>
+             <div class="info-column">
+            	<div class="info-athletics info-column-section-title">
+                <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapse2">Athletics</button>
+                <div id="collapse2" class="collapse">
+                 <ul class="info-column-section-list">
+                 	<li class="info-column-section-item">
+                    	<a class="info-column-section-link" href="">N/A</a>
+                        </li>
+                      </ul>
+                     </div>
+                     </div>
+                     </div>
+               <div class="info-column">
+            	<div class="info-counselors info-column-section-title">
+                <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapse3">Counselors</button>
+                <div id="collapse3" class="collapse">
+                 <ul class="info-column-section-list">
+                 	<li class="info-column-section-item">
+                    	<a class="info-column-section-link" href="">N/A</a>
+                        </li>
+                      </ul>
+                   </div>
+                   </div>
+                   </div>
+               <div class="info-column">
+            	<div class="info-staff info-column-section-title">
+                <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapse4">Staff</button>
+                <div id="collapse4" class="collapse">
+                 <ul class="info-column-section-list">
+                 	<li class="info-column-section-item">
+                    	<a class="info-column-section-link" href="">N/A</a>
+                        </li>
+                      </ul>
+                      </div>
+                      </div>
+                      </div>
+               <div class="info-column">
+                <div class="info-contactus info-column-section-title">
+                <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapse5">Contact Us</button>
+                <div id="collapse5" class="collapse">
+                 <ul class="info-column-section-list">
+                 	<li class="info-column-section-item">
+                    	<a class="info-column-section-link" href="">N/A</a>
+                        </li>
+                      	</ul>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+     </div>
+</body>
+</html>
